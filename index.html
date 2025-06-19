@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="My E-Portfolio">
+  <title>My E-Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+
+</head>
+<body>
+<!-- Tło z siecią -->
+<canvas id="bg-network"></canvas>
+<!-- Easter egg - toggle button and control panel -->
+<div id="network-easter-egg">
+    <button id="toggle-panel">🧪</button>
+    <div id="network-controls" class="hidden">
+
+      <label>
+        Nodes: <input type="range" min="10" max="200" value="90" id="nodeCount">
+      </label>
+      <label>
+        Link distance: <input type="range" min="50" max="300" value="140" id="linkDistance">
+      </label>
+      <label>
+        Hover pull: <input type="range" min="0" max="100" value="15" id="hoverPull">
+      </label>
+    </div>
+  </div>
+  <header>
+    <h1>My E-Portfolio</h1>
+  </header>
+
+  <main class="cube-container">
+    <div class="cube" id="cube">
+
+        <section class="face face-front" id="about">
+            <div class="face-nav">
+              <button class="nav-btn" id="prevBtn-about">◀</button>
+              <h2>About Me</h2>
+              <button class="nav-btn" id="nextBtn-about">▶</button>
+            </div>
+          
+            <div class="about-container">
+              <!-- Zdjęcie -->
+              <div class="about-photo">
+                <img src="assets/image.png" alt="My photo">
+
+              </div>
+          
+              <!-- Tekst -->
+              <div class="about-text">
+                <h3>About Me</h3>
+                <div style="text-align: center; margin-top: 1.5rem;">
+  <audio controls>
+    <source src="assets/Przedstawienie sie.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+  <p style="font-style: italic; margin-top: 0.5rem;">🎧 Listen to my About Me</p>
+</div>
+                <p>I am studying at the Faculty of Fundamental Problems of Technology at
+                Wroclaw University of Science and Technology. My field of study is quantum
+                engineering. I find my course demanding but very interesting. I am in the
+                undergraduate program, studying for my engineering degree. I am planning
+                to obtain it by 2027 and will write my thesis in 2026. I am interested in
+                quantum computing, machine learning, and numerical calculations.</p>
+                <p>I am in my second year, fourth semester. So far I have gained experience
+                in this research and numerical calculations necessary for fundamental physics
+                and engineering problems. I am good at programming, critical thinking, and
+                problem-solving. After graduating, I hope to further study in my field and
+                eventually set up my own business and/or get a well-paid engineering job.</p>
+          
+                <h3>My Goals</h3>
+                <p>My main goals are to improve my pronunciation of difficult words, develop
+                a good ability to read in English fluently, and increase my comprehension of
+                academic texts. All for improving on presentation skills.</p>
+          
+                <h4>Sidequests</h4>
+                <p>In addition to my main goals, I have some sidequests to work on. These include
+                learning new vocabulary and gaining knowledge from scientific articles
+                relevant to my studies and interests (quantum physics, numerical calculations,
+                algorithms etc.). During my e-portfolio sessions I am editing videos
+                necessary for documentation, so my editing skills should be improved.</p>
+          
+                <h4>Progress Verification</h4>
+                <p>To verify my progress, I will track improvements in my pronunciation. For
+                example, I can measure the number of syllables spoken in a given time and
+                check if this increases over time. Additionally, differences in my pronunciation
+                should be noticeable in recordings. I will also assess my reading fluency
+                by recording myself reading academic texts and comparing the speed and
+                accuracy over time. (Hearable difference)</p>
+              </div>
+            </div>
+          </section>
+        
+
+  <!-- Right face -->
+<section class="face face-right" id="weekly">
+    <div class="face-nav">
+      <button class="nav-btn" id="prevBtn-weekly">◀</button>
+      <h2>Weekly Updates</h2>
+      <button class="nav-btn" id="nextBtn-weekly">▶</button>
+    </div>
+  
+    <div class="accordion-list">
+      <!-- WEEK 1–10 -->
+ 
+      <!-- WEEK 1 -->
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 1</h3>
+          <p class="article-title">Unruh effect in quantum information
+            beyond the single-mode approximation</p>
+          <p class="article-authors">David E Bruschi, Jorma Louko, Eduardo Martín-Martínez, Andrzej Dragan, Ivette Fuentes</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Non-inertial frames</strong> Reference frames in which objects experience acceleration rather than moving
+                at a constant velocity (uniform motion). In such frames, additional forces,
+                called fictitious forces, must be introduced to account for the observed
+                motion, as these forces arise due to the acceleration of the frame rather than
+                any physical interaction</li>
+            <li><strong>Term 2: Bosonic or fermionic fields</strong> Quantum fields that obey different statistical rules: bosonic fields follow
+                Bose-Einstein statistics and describe particles like photons, while fermionic
+                fields follow Fermi-Dirac statistics and describe particles like electrons.</li>
+            <li><strong>Term 3: Uniform acceleration</strong> A constant rate of change of velocity over time, meaning an object experiences
+                a steady increase in speed or direction rather than varying or sudden changes
+                in acceleration.</li>
+            <li><strong>Term 4: Unruh effect</strong> A theoretical prediction in quantum field theory stating that an observer
+                undergoing uniform acceleration perceives a thermal radiation bath, while
+                an inertial observer in the same region detects only a vacuum state.</li>
+            <li><strong>Term 5: Minkowski states</strong> Quantum states defined in flat spacetime with Minkowski coordinates, where
+                inertial observers describe quantum fields in terms of well-defined energy
+                eigenstates associated with Minkowski frequencies.</li>
+            <li><strong>Term 6: Invoked (wywołane)</strong> To call upon or apply a principle, rule, or method in a specific context, often
+                to justify or explain an action.</li>
+            <li><strong>Term 7: Rindler basis</strong> A set of quantum states used to describe fields from the perspective of an
+                observer undergoing uniform acceleration, which differs from the Minkowski
+                basis used by inertial observers. These states naturally emerge in Rindler
+                space.</li>
+            <li><strong>Term 8: Minkowski single particle state</strong>A quantum state representing a single particle as defined in Minkowski space-
+                time, where energy and momentum are well-defined for inertial observers.
+                When transforming to the Rindler basis, these states decompose into a
+                superposition of Rindler modes (modów Rindlera), which are wave solutions to quantum field equations in Rindler coordinates, describing how
+                particles appear to an accelerating observer.</li>
+            <li><strong>Term 9: Rindler space</strong> The coordinate system used to describe the viewpoint of uniformly accelerating observers, dividing spacetime into separate regions called wedges
+                (klinów), which are causally disconnected areas in Rindler coordinates. The
+                transformation between Minkowski single particle states and Rindler
+                basis states plays a key role in studying quantum effects in accelerating
+                frames.</li>
+            <li><strong>Term 10: Minkowski wave packets</strong> Localized superpositions of Minkowski plane waves that describe quantum
+                states with well-defined spatial and temporal properties. These wave packets result from applying an appropriate Fourier transform to construct
+                physically meaningful solutions in Minkowski spacetime</li>
+            <li><strong>Term 11: Space-like hypersurface</strong> A three-dimensional surface in spacetime where all points are separated by
+                space-like intervals, meaning that no causal signals can travel between them. It represents an instantaneous "slice" of space at a given moment in a chosen
+                reference frame.</li>
+            <li><strong>Term 12: Denote the wedge</strong> To assign a symbol or name to the wedge for reference. (Oznaczyć klin
+                symbolem lub nazwą do późniejszego użycia.)</li>
+            <li><strong>Term 13: Rindler coordinates</strong> A coordinate system adapted to uniformly accelerating observers, dividing
+                spacetime into separate regions (wedges) and providing a natural description
+                of physics in non-inertial frames.</li>
+            <li><strong>Term 14: Yields the solutions</strong> Indicates that solving an equation or applying a method results in obtaining
+                the given solutions.</li>
+            <li><strong>Term 15: The new observations in this paper will stem</strong> Indicates that the new findings presented in this paper originate from or are
+                a direct consequence of previously discussed effects.</li>
+            <li><strong>Term 16: Bogoliubov transformations</strong> Mathematical transformations that relate different sets of quantum field
+                mode expansions, commonly used to describe particle creation in curved
+                spacetime and non-inertial frames.</li>
+            <li><strong>Term 17: Bosonic commutation</strong> A mathematical rule describing how bosonic operators behave under com mutation, given by \[
+                [a, a^\dagger] = 1
+                \] ensuring that bosons obey Bose-Einstein statistics.</li>
+            <li><strong>Term 18: How the vacua and excited states</strong> Jak próżnie i stany wzbudzone
+                The relationship between vacuum states and excited states when defined in
+                different bases, analyzing how particle creation and annihilation operators
+                transform between them.</li>
+            <li><strong>Term 19: Ansatz</strong> (Założenie rozwiązania)
+                An assumed form of a solution to an equation, used as a starting point for
+                further calculations or approximations</li>
+            <li><strong>Term 20: Peres partial-transpose criterion</strong> A mathematical test for detecting quantum entanglement based on taking
+                the partial transpose of a density matrix.</li>
+            <li><strong>Term 21: Eigenvalues</strong> The characteristic values associated with a linear transformation, represent-
+                ing the factors by which eigenvectors are scaled when the transformation is
+                applied.</li>
+            <li><strong>Term 22: Hermitian conjugate</strong> The operation of taking the complex conjugate and transpose of a matrix,
+                often used in quantum mechanics to define adjoint operators.</li>
+            <li><strong>Term 23: Distinct Minkowski momenta</strong> Different values of four-momentum in Minkowski spacetime, representing
+                unique energy-momentum states of a quantum system.</li>
+            <li><strong>Term 24: Parseval’s theorem</strong> A fundamental result in Fourier analysis stating that the total energy of a
+                function in the time domain is equal to the total energy in the frequency
+                domain.</li>
+            <li><strong>Term 25: Adjusting the locus of the peak</strong> Dostosowywanie położenia maksimum Modifying parameters to shift
+                the position of the highest point of a function or distrion.</li>
+            <li><strong>Term 26: The main qualitative difference</strong> Główna jakościowa różnica</li>
+            <li><strong>Term 27: Dirac fields</strong> Quantum fields that obey the Dirac equation and describe fermionic particles,
+                such as electrons, which follow Fermi-Dirac statistics.</li>
+            <li><strong>Term 28: Spinorial affine connections</strong> Mathematical objects describing how spinor fields transform under parallel
+                transport in curved spacetime, generalizing the concept of affine connections
+                to spinor fields.</li>
+            <li><strong>Term 29: Convenience</strong> Wygoda</li>
+            <li><strong>Term 30: Grassman scalars</strong> Mathematical objects that obey anticommutation relations, used in quantum
+                field theory to describe fermionic degrees of freedom.</li>
+            <li><strong>Term 31: Hilbert space</strong> A complete vector space with an innerct, providing the mathematical framework for quantum mechanics and functional analysis.</li>
+            <li><strong>Term 32: Resilient</strong> Able to withstand or recover quickly from difficult conditions or disturbances.</li>
+            
+
+          </ul>
+          <h4>Summary</h4>
+          <p>This paper explores the effects of non-inertial frames on quantum entanglement, particularly in the context of Rindler coordinates. The study examines how quantum states transform between Minkowski and Rindler bases
+            using Bogoliubov transformations. A key focus is the entanglement degradation observed in accelerating reference frames, analyzed through Peres’
+            partial-transpose criterion. The role of Dirac fields and their resilience to
+            entanglement degradation compared to bosonic fields is also highlighted. To further understand these effects, the study delves into how Minkowski
+            single particle states relate to Rindler modes through Bogoliubov transformations. The properties of quantum fields in accelerating frames are examined, with an emphasis on the distinction between bosonic and fermionic
+            field entanglement. A crucial aspect of this discussion is the role of spinorial
+            affine connections in defining how Dirac fields behave under transformations.
+            Additionally, the analysis highlights how adjusting the locus of the peak in
+            wave packets influences entanglement behavior, providing insight into how
+            quantum correlations shift in non-inertial frames. Building on these foundations, the discussion moves to how entanglement is
+            affected by uniform acceleration, particularly through the Unruh effect. The
+            study investigates how quantum vacuum states and excited states transform
+            in Rindler space, demonstrating that entanglement degradation depends on
+            the structure of the Hilbert space. The Peres partial-transpose criterion
+            is applied to examine separability conditions, revealing notable differences
+            between bosonic and Dirac fields in their response to acceleration. Notably,
+            Dirac fields exhibit greater resilience to entanglement degradation, suggesting
+            fundamental differences in how quantum correlations behave across different
+            types of fields. A deeper exploration into mode expansions of quantum fields follows, illustrating how field operators decompose into different frequency modes in
+            accelerating frames. By utilizing Rindler coordinates, the study reveals how
+            these expansions influence quantum correlations, directly impacting entanglement properties. The authors employ Parseval’s theorem to quantify entanglement distribution, while also discussing the role of Grassmann scalars
+            in fermionic field behavior. The findings underscore the importance of Hilbert
+            space structure in shaping the evolution of entanglement under acceleration. Bringing these elements together, the study confirms that entanglement degradation is an inherent feature of acceleration, with Dirac fields demonstrating
+            greater resilience compared to bosonic fields. The role of spinorial affine
+            connections and Bogoliubov transformations is emphasized in understanding
+            quantum correlations in accelerating frames. These insights hold significant
+            implications for quantum information theory in relativistic settings, pointing
+            towards potential experimental applications and deeper theoretical models
+            in future research.</p>
+          <h4>Video</h4>
+          <div class="youtube-container">
+            <iframe src="https://youtu.be/4FCJwLKUmxc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <!-- WEEK 2 -->
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 2</h3>
+          <p class="article-title">Damage and Fluctuations Induce
+            Loops in Optimal Transport Networks</p>
+          <p class="article-authors">Elena Katifori, Gergely J. Szöllősi, Marcelo O Magnasco</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Dicotyledon leaf venation</strong> The vascular network found in dicotyledonous plants, characterized by a
+                highly interconnected structure with numerous closed loops. Unlike monocotyledonous venation, which typically consists of parallel veins, dicotyledon
+                leaf venation provides increased resilience to damage by allowing fluid transport even when certain veins are disrupted.</li>
+            <li><strong>Term 2: Convexity (wypukłość)</strong> A property of a set or function where any two points within the set can
+                be connected by a straight line that remains entirely within the set. In
+                optimization and network theory, convexity often ensures that local optima
+                are also global optima.</li>
+            <li><strong>Term 3: Cost of a conductance (koszt przewodności)</strong> A measure of the resource expenditure required to establish and maintain
+                electrical, fluid, or thermal conductance in a network. In optimization problems, this cost is often modeled as a function of the conductance value and
+                influences the efficiency of transport networks.</li>
+            <li><strong>Term 4: Energy dissipation (rozpraszanie energii)</strong> The process by which energy is converted into an unusable form, typically
+                heat, due to resistance or inefficiencies in a system. In transport networks,
+                minimizing energy dissipation is a key optimization goal to enhance efficiency
+                and reduce losses.</li>
+            <li><strong>Term 5: Vasculature (układ naczyniowy)</strong> The network of vessels responsible for the transport of fluids, such as blood
+                in animals or sap in plants. It plays a crucial role in nutrient distribution,
+                waste removal, and overall system resilience.li>
+            <li><strong>Term 6: Retina (siatkówka)</strong> A light-sensitive layer of tissue in the eye that converts incoming light into
+                neural signals, which are then transmitted to the brain for visual processing.
+                The vasculature of the retina ensures oxygen and nutrient supply, critical for
+                its function.</li>
+            <li><strong>Term 7: Gorgonian corals (koralowce gorgoniaste)</strong> A group of soft corals belonging to the order Alcyonacea, characterized by
+                their branching, fan-like structures. These corals, such as sea fans, form
+                intricate, web-like skeletal frameworks that enhance structural stability and
+                fluid transport in aquatic environments.</li>
+            <li><strong>Term 8: Qualitative predictions (jakościowe przewidywania)</strong> Forecasts or explanations based on general trends, logical reasoning, or theoretical models rather than precise numerical calculations. These predictions
+                help identify expected behaviors or outcomes without requiring exact quantitative data.</li>
+            <li><strong>Term 9: Stomatal patchiness (niejednorodność aparatów szparkowych)</strong> A phenomenon in plant physiology where stomata exhibit spatially heterogeneous opening and closing across the leaf surface. This irregular behavior
+                affects gas exchange, water loss, and photosynthetic activity, often as an
+                adaptive response to environmental stress</li>
+            <li><strong>Term 10: Spatiotemporal irregularities (niestabilności czasoprzestrzenne)</strong>Variations in a system that occur both across space and over time. These
+                irregularities can influence dynamic processes, such as transport networks,
+                where fluctuations in demand or environmental conditions affect optimal configurations.</li>
+            <li><strong>Term 11: Relaxation techniques (techniki relaksacyjne)</strong> A class of numerical methods used to iteratively solve optimization or differential problems by progressively improving an initial estimate. These techniques are widely applied in physics, engineering, and computational mathematics to find approximate solutions to complex equations.</li>
+            <li><strong>Term 12: Monte Carlo methods</strong> A set of computational algorithms that use random sampling to obtain numerical results, often applied to optimization, numerical integration, and
+                probabilistic modeling. Monte Carlo methods are particularly useful in high-dimensional problems where deterministic approaches become infeasible.</li>
+            <li><strong>Term 13: Annealing (wyżarzanie) method</strong> An optimization technique inspired by the physical annealing process, where
+                a material is slowly cooled to reach a stable state. In computational contexts,
+                simulated annealing is used to find approximate global optima by probabilistically accepting worse solutions early in the process to escape local minima.</li>
+            <li><strong>Term 14: Normalized dissipation (znormalizowana dyssypacja)</strong> A measure of energy loss in a system that has been scaled relative to a
+                reference value, typically to allow for comparison across different conditions.
+                Normalized dissipation is often used in transport networks to assess efficiency
+                while accounting for variations in conductivity or system constraints.</li>
+            <li><strong>Term 15: Exhibit a cusp (wykazywać osobliwość typu wierzchołka)</strong> A mathematical behavior where a function or graph has a pointed, non-smooth peak, often indicating a sudden change in behavior. In optimization
+                and phase transitions, a cusp represents a critical point where system properties shift abruptly.</li>
+            <li><strong>Term 16: Valencies (walencje w teorii grafów)</strong> The number of edges connected to a given node in a network or graph. In
+                transport and optimization models, valency influences connectivity, redundancy, and overall system efficiency.</li>
+            <li><strong>Term 17: Orders impinge directly (rzędy naczyń bezpośrednio się
+                stykają)</strong> A description of vascular structures where blood vessels of different hierarchical levels connect directly without intermediary branches. This phenomenon
+                is observed in biological networks, such as the retina, where lower-order veins
+                can merge with primary arteries.</li>
+
+          </ul>
+          <h4>Summary</h4>
+          <p>This paper investigates the presence of loops in optimal transport networks, focusing on biological examples such as dicotyledon leaf venation and vascular networks
+            in animal tissues. Traditional optimization models suggest that transport networks
+            should adopt a tree-like, loopless structure to minimize energy dissipation. However, many natural networks exhibit densely nested loops, suggesting additional
+            functional advantages.
+            The study explores two primary factors contributing to loop formation: resilience to damage and adaptation to fluctuating load conditions. In the damage-
+            resistance model, the authors demonstrate that networks with loops are more robust, ensuring continued functionality even when certain connections are severed.
+            This redundancy prevents catastrophic failure and enables alternative transport
+            pathways. In the fluctuating load model, loops emerge as an optimal adaptation
+            to variable demands, enhancing the network’s ability to dynamically redistribute
+            resources.
+            Mathematical formulations and computational simulations are employed to analyze the behavior of transport networks under these constraints. The optimization
+            approach incorporates conductance costs, energy dissipation minimization, and
+            network connectivity constraints. The results indicate a phase transition between
+            loopless and looped structures, dependent on the system parameters.
+            Furthermore, the paper discusses the implications of network topology on biological and artificial transport systems, highlighting how real-world examples, such
+            as leaf venation and brain vasculature, align with the theoretical predictions. The
+            findings challenge the conventional assumption that tree-like structures are always
+            optimal, instead suggesting that loops play a crucial role in enhancing resilience
+            and adaptability in dynamic environments.
+            Through relaxation techniques, Monte Carlo simulations, and annealing methods, the authors provide quantitative insights into how loop formation is driven
+            by structural and functional demands. The results suggest that the evolution of
+            transport networks is influenced by more than just efficiency considerations, with
+            robustness and adaptability playing equally significant roles</p>
+          <h4>Video</h4>
+          <div class="youtube-container">
+            <iframe src="https://www.youtube.com/watch?v=t-iwPSW4fE8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <!-- WEEK 3 -->
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 3</h3>
+          <p class="article-title">Fluctuations and Redundancy in
+            Optimal Transport Networks</p>
+          <p class="article-authors">Francis Corson</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: contingent(warunkowy)</strong> A condition that depends on something else. In this context, the result (that
+                optimal networks are trees) holds only if the assumption of stationary flow
+                is valid. If that assumption changes, the result may no longer apply.</li>
+            <li><strong>Term 2: network topologies</strong> The arrangement or structure of connections between elements in a network.
+                In transport networks, topology refers to how nodes (like sources and sinks)
+                are connected by links (edges). Different topologies—such as trees, loops, or
+                hierarchical networks—affect how efficiently resources are transported and
+                how the network responds to damage or fluctuations. </li>
+            <li><strong>Term 3: strong incentive (silna motywacja)</strong>A powerful reason or motivation to do something. In this context, the observation of self-similar patterns in natural networks strongly encouraged re-
+                searchers to study the structure of optimal transport networks more closely. </li>
+            <li><strong>Term 4: porous pipes (rurki porowate)</strong> Pipes that contain tiny holes or pores, allowing fluid to pass through slowly.
+                In transport networks, they are used to model systems like plant veins or
+                filtration systems, where the material permits gradual movement of liquid
+                rather than unrestricted flow.</li>
+            <li><strong>Term 5: Poiseuille flow (przepływ Poiseuille’a)</strong> A type of fluid flow through a cylindrical pipe, where the fluid moves in
+                smooth layers (laminar flow). The flow rate depends on the fourth power of
+                the pipe’s radius, the pressure difference, and inversely on the fluid’s viscosity
+                and pipe length. This law is used to model flow in narrow tubes like blood
+                vessels or plant veins, assuming the flow is steady and the pipe is rigid.</li>
+            <li><strong>Term 6: Kronecker delta (delta Kroneckera)</strong> A mathematical function used to express discrete conditions. It equals 1
+                when its two indices are equal and 0 otherwise: \[
+                \delta_{kl} = 
+                \begin{cases}
+                1 & \text{if } k = l \\
+                0 & \text{if } k \neq l
+                \end{cases}
+                \] In this context, it helps describe uncorrelated fluctuations: variables are only
+                correlated with themselves.</li>
+            <li><strong>Term 7: exceed a threshold conductance</strong> przekraczać progową
+                przewodność  </li>
+            <li><strong>Term 8:</strong>Networks that contain loops and interconnected pathways, resembling a web
+                or mesh. Unlike tree-like structures, which have only one path between any
+                two points, reticulate networks offer multiple routes, increasing redundancy
+                and resilience. Examples include leaf venation or blood vessels in some tissues</li>
+            <li><strong>Term 9: reticulate networks (sieci o strukturze siatki)</strong> Networks that contain loops and interconnected pathways, resembling a web
+                or mesh. Unlike tree-like structures, which have only one path between any
+                two points, reticulate networks offer multiple routes, increasing redundancy
+                and resilience. Examples include leaf venation or blood vessels in some tissues.</li>
+            <li><strong>Term 10: power-law correlations (korelacje potęgowe)</strong> A type of statistical relationship where the strength of the correlation between two quantities decreases as a power of the distance or time separating them. In simpler terms, events that are far apart can still be related, but
+                their influence fades slowly, not suddenly. In networks, this means that fluctuations (like flow changes) at distant points can still affect each other, often
+                seen in natural systems like leaf venation or earthquakes.<li>
+            <li><strong>Term 11: transpiration (transpiracja)</strong> The process by which water evaporates from the surface of plant leaves,
+                mainly through small pores called stomata. This water loss helps draw more
+                water and nutrients up from the roots and also cools the plant. In the
+                article, variations in transpiration across a leaf explain why certain network
+                structures, like loops, are beneficial for adapting to changing demands.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>Fluctuations and Redundancy in Optimal Transport Networks
+            by Francis Corson
+            This article explores how fluctuations in flow affect the structure of
+            optimal transport networks. Traditional models, assuming stationary
+            flow, often predict tree-like topologies—structures without loops, where a
+            single path connects any two points. However, the author shows that this result is contingent on the stationary flow assumption. When time-varying
+            or random flows are introduced, networks that include loops become more
+            optimal.
+            The study models dissipation in networks, including porous pipes and
+            Poiseuille flow, and examines how minimizing energy loss under a limited
+            resource budget leads to different structures. A key finding is that when the
+            flow exceeds a threshold conductance, networks evolve to include loops,
+            especially when the parameter γ is less than 1.
+            To quantify this behavior, the article introduces measures like loop density and redundancy, the latter calculated using the Kronecker delta
+            and entropy-based methods. These measures show a clear transition between different network topologies, from trees to reticulate networks
+            (networks with interconnected loops) as fluctuation intensity increases.
+            Moreover, the author investigates how power-law correlations in fluctuations—meaning long-range dependencies—can further support loop formation, especially in biological systems. A practical example is transpiration in plant leaves, where water loss varies across space and time. This ex-
+            plains why leaf venation networks display dense, looped structures rather
+            than trees.
+            In conclusion, the article highlights that incorporating fluctuations changes
+            our understanding of what makes a network optimal. Instead of minimizing dissipation alone, networks must balance efficiency with resilience and
+            adaptability, which is naturally achieved through redundancy and loops.</p>
+          <h4>Video</h4>
+          <div class="youtube-container">
+            <iframe src="https://youtu.be/6ET3sE7Vpz4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <!-- WEEK 4 -->
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 4</h3>
+          <p class="article-title">Bose-Einstein Condensation of Erbium</p>
+          <p class="article-authors">K. Aikawa, A. Frisch, M. Mark, S. Baier, A. Rietzler, R. Grimm,
+            F. Ferlaino</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Feshbach Spectroscopy</strong> Technique used to identify and control interatomic interactions by tuning
+                external magnetic fields; reveals positions of Feshbach resonances and scattering properties.</li>
+            <li><strong>Term 2: Feshbach Resonance</strong> A resonance that allows tuning of the scattering length between atoms via a
+                magnetic field; occurs when a bound molecular state is energetically aligned
+                with the scattering state.</li>
+            <li><strong>Term 3: Many- and Few-body</strong> układy wielo- i kilku-ciałowe;</li>
+            <li><strong>Term 4: Alkalis</strong> [Definition]</li>
+            <li><strong>Term 5: Evaporative Cooling</strong> A cooling technique where the most energetic atoms are selectively removed
+                from a trapped gas, allowing the remaining atoms to rethermalize at a lower
+                temperature.</li>
+            <li><strong>Term 6: Dipolar BEC</strong>A Bose-Einstein condensate in which atoms interact not only via short-range
+                contact interactions but also via long-range, anisotropic dipole-dipole inter-
+                actions.</li>
+            <li><strong>Term 7: Magnetic Lanthanides</strong>Lanthanide atoms with large magnetic moments; their strong dipolar interactions make them ideal for studying novel quantum phenomena in ultracold
+                gases.</li>
+            <li><strong>Term 8: MOTs Permit</strong> Magneto-optical traps (MOTs) allow efficient cooling and trapping of atoms
+                using laser light and magnetic field gradients; they enable preparation of cold
+                atomic samples for further manipulation.</li>
+            <li><strong>Term 9: Degenerate Fermi Gas of Dysprosium</strong> An ultracold gas of fermionic dysprosium atoms cooled below the Fermi
+                temperature, where quantum statistics dominate and the system exhibits
+                fermionic quantum behavior.</li>
+            <li><strong>Term 10: Stern-Gerlach-type Measurements</strong> Measurements that exploit magnetic field gradients to spatially separate
+                atomic spin states, allowing determination of the spin polarization of an
+                atomic sample.</li>
+            <li><strong>Term 11: Spin Polarization</strong> A condition in which the spins of atoms in a sample are aligned preferentially in a particular direction, often achieved using magnetic fields or optical
+                pumping.</li>
+            <li><strong>Term 12: BEC Fraction</strong> The proportion of atoms in a trapped gas that occupy the condensate (ground)
+                state, distinguishing them from the remaining thermal atoms; an indicator
+                of condensation progress.</li>
+            <li><strong>Term 13: Ramping Issues and Eddy Currents</strong> Technical effects occurring during changes in magnetic fields; rapid field
+                changes can induce eddy currents in nearby conductors, causing delays
+                or distortions in the intended magnetic field profile.</li>
+            <li><strong>Term 14: Truncated Energy Distribution</strong> An energy distribution in which the highest-energy atoms have been removed,
+                typically through evaporative cooling, resulting in a non-thermal tail and
+                lower average energy.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article reports the successful creation of a dipolar Bose-Einstein condensate (BEC) of \textsuperscript{168}Erbium atoms. Using a narrow-line MOT, which permits efficient loading into an optical dipole trap, the researchers cool the atomic sample via evaporative cooling, reaching temperatures low enough to observe condensation. Spin polarization is achieved automatically during the MOT stage, confirmed through Stern-Gerlach-type measurements.
+
+            The experiment highlights the unique properties of erbium, a magnetic lanthanide with a large magnetic moment, which enables strong dipole-dipole interactions. These interactions give rise to dipolar effects not present in traditional alkalis. The formation of a BEC is identified by analyzing the BEC fraction through time-of-flight absorption imaging.
+            
+            A key technique used is Feshbach spectroscopy, which reveals multiple Feshbach resonances at low magnetic fields. These resonances allow for the tuning of interatomic interactions, including locating zero crossings of the scattering length. The presence of ramping issues and eddy currents is noted as a potential challenge in precise magnetic field control.
+            
+            The authors also demonstrate a d-wave collapse of the condensate near a Feshbach resonance, providing evidence of strong dipolar effects. The resulting cloverleaf pattern in the atomic cloud confirms the anisotropic nature of the dipolar interactions.
+            
+            Overall, this work opens new opportunities for studying many-body quantum physics with strongly magnetic atoms, enriching the field with systems beyond conventional alkali-based quantum gases.</p>
+          <h4>Video</h4>
+          <div class="youtube-container">
+            <iframe src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+  
+      <!-- WEEK 5 -->
+      <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 5</h3>
+          <p class="article-title">nalysis of Temporal Patterns in
+            Animal Movement Networks</p>
+          <p class="article-authors">Cristian Pasquaretta, Thibault Dubois, Tamara Gomez-Moracho,
+            Virginie P. Delepoulle, Guillaume Le Loc’h, Philipp Heeb, Mathieu Lihoreau</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1:</strong> A small, recurring subnetwork pattern within a larger network. In this article,
+                motifs are made of three connected locations (nodes) and represent specific
+                types of movement behavior, such as revisits or straight paths.</li>
+            <li><strong>Term 2:</strong> A type of random movement where each step is independent of the previous
+                one, with small displacements in all directions. It models random exploration
+                without memory or goal, often used as a baseline in movement ecology.</li>
+            <li><strong>Term 3:</strong> A random walk characterized by many short steps and occasional long ones.
+                It is considered an efficient strategy for searching sparsely distributed re-
+                sources and is often used to describe animal foraging behaviors.</li>
+            <li><strong>Term 4:</strong> The act of searching for and collecting food. Animals may use different
+                movement strategies while foraging, and their efficiency depends on how they
+                explore the environment. Complex or patterned movements often indicate
+                learned or optimized foraging</li>
+            <li><strong>Term 5:</strong> A movement pattern where the animal returns to a previously visited location, often indicating familiar or important places such as a nest, shelter, or
+                feeding area. In network terms, it represents an edge from a node back to
+                itself.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article introduces a method to analyze how animal movement patterns evolve over time by transforming animal trajectories into temporal movement networks. Traditional spatial analyses often miss the temporal component of behavior, which can provide crucial insights into how animals use and revisit areas across different contexts like migration, foraging, and territory.
+
+            The researchers collected trajectory data from four species—bumblebee, black kite, roe deer, and wolf—using different tracking technologies (e.g., GPS, harmonic radar). Each trajectory was converted into a network, where spatial locations became nodes and movements between them were edges. Then, by analyzing the order and structure of small sub-networks (called "motifs"), they revealed how animals transition between different behavioral modes.
+            
+            They found that simple movement motifs (like straight paths) often corresponded to behaviors such as migration or searching, while more complex motifs (involving revisits to previous locations) indicated site fidelity, such as returning to a nest or familiar territory. For example, bumblebees showed loops near the nest, while wolves displayed repeated use of their summer range.
+            
+            The method also compared the observed animal movements to simulated Brownian and Lévy random walks. Some patterns—such as the bumblebee’s foraging—resembled Lévy flights, a strategy known for efficient searching. In contrast, the wolf and black kite behaviors showed more structured patterns that did not fit classical models, suggesting richer behavioral dynamics.
+            
+            Ultimately, this study highlights the power of motif-based network analysis for uncovering hidden temporal patterns in animal behavior. It opens the door to future research into social interactions, memory, and spatial strategy across diverse species.</p>
+          <h4>Audio- from now on I switched to audio- lack of time.</h4>
+        <div class="audio-block">
+  <p><strong>Week 5 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski5_tera dobrze.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+  
+       <!-- WEEK 6 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 6</h3>
+          <p class="article-title"> A Ridiculously Short Introduction
+            to Some Very Basic Quantum Mechanics</p>
+          <p class="article-authors">Marianne Freiberger</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1:</strong> The concept that every particle or quantum entity exhibits both wave and
+                particle properties. For example, electrons can show interference patterns (a
+                wave property) in experiments like the double-slit experiment.</li>
+            <li><strong>Term 2:</strong> A fundamental equation in quantum mechanics formulated by Erwin Schrödinger.
+                It describes how the quantum state of a physical system changes over time,
+                allowing the calculation of probabilities for different outcomes.</li>
+            <li><strong>Term 3:</strong> A mathematical function that encapsulates the quantum state of a system.
+                The square of its absolute value gives the probability density of finding a
+                particle in a particular position or state.</li>
+            <li><strong>Term 4:</strong> A principle stating that a quantum system can exist in multiple states simultaneously until it is measured, at which point it collapses into one of the
+                possible states.</li>
+            <li><strong>Term 5:</strong>The process by which a quantum system transitions from a superposition of
+                states to a single state due to measurement or observation.</li>
+            <li><strong>Term 6:</strong> A fundamental limit in quantum mechanics, formulated by Werner Heisenberg, stating that certain pairs of physical properties (like position and momentum)</li>
+
+          </ul>
+          <h4>Summary</h4>
+          <p>
+            This concise article introduces the foundational concepts of quantum mechanics, focusing on the wave-particle duality and the Schrödinger equation. It begins by highlighting the historical context: in the early 20th century, physicists like Einstein and de Broglie proposed that light and matter exhibit both wave-like and particle-like properties.
+            
+            The wave-particle duality suggests that particles such as electrons can behave like waves under certain conditions. This duality challenges classical physics, which treats particles and waves as distinct entities. The article emphasizes that this concept is central to understanding quantum phenomena.
+            
+            Building on de Broglie's hypothesis, Erwin Schrödinger developed a mathematical framework to describe how these matter waves evolve over time. The resulting Schrödinger equation is a fundamental equation in quantum mechanics that predicts the behavior of quantum systems. It allows physicists to calculate the probability of finding a particle in a particular state or location.
+            
+            The article also touches upon the probabilistic nature of quantum mechanics. Unlike classical mechanics, which can predict exact outcomes, quantum mechanics deals with probabilities. The act of measurement affects the system, leading to the concept of wavefunction collapse, where a quantum system transitions from a superposition of states to a single outcome upon observation.
+            
+            In summary, the article provides a brief yet insightful overview of key quantum mechanics principles, emphasizing the departure from classical deterministic views and introducing the probabilistic and dual nature of quantum entities.</p>
+            <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 6 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski6_sredniawo.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+       <!-- WEEK 7 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 7</h3>
+          <p class="article-title">Computer Science Proof Lifts Limits
+            on Quantum Entanglement</p>
+          <p class="article-authors">Mordechai Rorvig</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: NLTS (No Low-Energy Trivial States) conjecture</strong> A theoretical statement in quantum complexity theory. It claims that some
+                quantum systems remain highly entangled even in their low-energy (almost
+                ground state) configurations. This means they cannot be approximated by
+                "trivial" (unentangled or weakly entangled) quantum states, suggesting inherent computational hardness.</li>
+            <li><strong>Term 2: PCP (Probabilistically Checkable Proof) theorem</strong>A major result in classical computational complexity. It states that some
+                mathematical proofs can be verified by checking only a small portion of
+                the proof randomly, with high probability. This implies that approximating
+                certain problems is as hard as solving them exactly. The quantum version of
+                this theorem remains unproven, but the NLTS result is a step toward it.</li>
+            <li><strong>Term 3: Entanglement (splątanie kwantowe)</strong> A uniquely quantum correlation between particles, where the state of one
+                particle is instantly linked to the state of another, no matter the distance.
+                Entanglement is a key resource in quantum computation and quantum information.</li>
+            <li><strong>Term 4: Low-energy state (stan niskoenergetyczny)</strong> A configuration of a quantum system that is close to its ground state (minimum possible energy). In classical systems, such states are often simple. In
+                quantum systems, they can still carry complex entanglement structures.</li>
+            <li><strong>Term 5: Quantum PCP conjecture</strong> An open problem in quantum complexity theory. It posits that verifying
+                solutions to certain quantum problems is still hard, even if we only care about approximate (low-energy) solutions — analogous to the classical PCP
+                theorem.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article discusses a significant advancement in quantum computational complexity: the proof of the NLTS (No Low-Energy Trivial States) conjecture. This conjecture posits that certain quantum systems remain computationally complex even in their low-energy states, implying that their entanglement cannot be easily simplified or approximated.
+
+            The authors illustrate this concept using a thought experiment: imagine placing numerous bar magnets in a bathtub. Each magnet interacts with its neighbors, seeking an optimal orientation. Predicting the final arrangement becomes exceedingly complex as the number of magnets increases. When these magnets are replaced with quantum particles, the complexity escalates further due to quantum entanglement.
+            
+            Previously, the PCP (Probabilistically Checkable Proof) theorem in classical computer science established that certain problems remain hard to approximate. The quantum analogue, the quantum PCP conjecture, remains unproven. However, the recent proof of the NLTS conjecture serves as a crucial step toward this goal. It demonstrates that even low-energy states of specific quantum systems cannot be approximated by simple, unentangled states.
+            
+            This finding has profound implications for quantum computing and our understanding of quantum systems. It suggests that certain quantum states inherently possess complex entanglement structures, making them resistant to simplification. This resilience is essential for developing robust quantum error correction methods and understanding the fundamental limits of quantum computation.</p>
+            <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 7 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski7_sredniawo.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+       <!-- WEEK 8 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 8</h3>
+          <p class="article-title">How Memory Guides Animal Movement </p>
+          <p class="article-authors">Tianxu Wang, Kyunghan Choi, Hao Wang</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Gradient-based movement</strong> A movement strategy where animals follow environmental gradients — such
+                as temperature, scent, or resource concentration — to guide their navigation.
+                The intensity of the gradient gives clues about direction.</li>
+            <li><strong>Term 2: Environment matching</strong> The tendency of animals to seek out or stay in environments that resemble
+                those they are familiar with, such as matching temperature, light, or humidity
+                to previously experienced conditions.</li>
+            <li><strong>Term 3: Location-based movement</strong> A decision-making process where animals rely on local information (e.g. light,
+                shelter, food availability) rather than on large-scale environmental cues.</li>
+            <li><strong>Term 4: Memory-induced movement</strong> Animal movement behavior that is influenced or altered by memory of past
+                experiences, such as routes, danger zones, or resource-rich areas.</li>
+            <li><strong>Term 5: Numerical simulation</strong> A mathematical technique used to model complex systems by computing
+                approximate solutions using iterative algorithms. Used here to test how
+                memory affects movement.</li>
+            <li><strong>Term 6: Crumbs</strong>Small pieces of food (e.g. bread). In behavioral ecology, “crumbs” are some-
+                times used metaphorically to describe chemical or physical trails left by ani-
+                mals, such as pheromone trails left by ants.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article explores how memory influences animal movement and decision-making. Animals don't move randomly; their past experiences and memories play a crucial role in guiding their actions. The authors discuss three primary movement models that incorporate memory:
+
+            1. **Gradient-Based Movement**: Animals respond to environmental gradients, such as the scent of food or the path of a river. For example, ants follow a trail of crumbs, using the gradient to guide their journey.
+            
+            2. **Environment Matching**: Some animals prefer to settle in areas with conditions similar to where they came from. Fish might swim to areas that match the water temperature they were born in.
+            
+            3. **Location-Based Movement**: Animals decide where to go based on local conditions without regard to their broader environment. A cat might choose to curl up in a sunny spot on the floor, relying solely on immediate surroundings.
+            
+            The authors also discuss how scientists derive these models using mathematical approaches, breaking down movements into smaller time and space units to capture detailed behaviors. Numerical simulations reveal distinct behaviors under memory-induced conditions, highlighting the importance of memory in shaping movement patterns.</p>
+             <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 8 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski8_poprawne.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+       <!-- WEEK 9 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 9</h3>
+          <p class="article-title">The Statistical Building Blocks of
+            Animal Movement Simulations</p>
+          <p class="article-authors">Wayne M. Getz, Richard Salter, Varun Sethi, Shlomo Cain, Orr
+            Spiegel, Sivan Toledo</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Statistical Movement Elements (StaMEs)</strong> Short segments of animal movement data (e.g., 10–30 GPS points), characterized by summary statistics like mean speed and turning angle. They act
+                as “building blocks” for modeling behavior.</li>
+            <li><strong>Term 2: Canonical Activity Modes (CAMs)</strong> Sequences of StaMEs that reflect consistent short-term behavior patterns
+                (e.g. steady walking, circling, or straight-line movement).</li>
+            <li><strong>Term 3: Behavioral Activity Modes (BAMs)</strong> Longer patterns of behavior made by combining CAMs (e.g., foraging, resting, migrating). These describe goal-oriented or context-specific activities.</li>
+            <li><strong>Term 4: Step-selection kernel</strong> A rule or probability distribution used to decide where an animal moves next,
+                depending on its current state, landscape properties, and internal variables.</li>
+            <li><strong>Term 5: ANIMOVER_1</strong> A simulation platform that models animal movement using a runtime-alterable
+                framework. It allows users to test movement hypotheses without coding, using graphical inputs and real-world parameters.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article introduces a novel framework for understanding and simulating animal movement, based on extracting statistical patterns from relocation data. The central concept is the definition of **Statistical Movement Elements** , which are short, quantifiable segments of movement characterized by measurable features such as average speed (step length) and turning angle. These segments are derived directly from real or simulated GPS data and serve as the fundamental building blocks for analyzing complex movement behavior.
+The authors argue that traditional models of animal movement often rely on abstract or oversimplified assumptions. In contrast, their approach aims to reconstruct realistic movement patterns from the bottom up, using empirical statistics derived from high-resolution relocation data. These StaMEs are then grouped into **Canonical Activity Modes** , which represent distinct patterns of short-term activity like slow wandering, brisk walking, or fast, directed flight. Longer sequences of CAMs are in turn assembled into **Behavioral Activity Modes**, such as foraging, resting, patrolling, or homing. These behavioral modes can describe routines over daily or longer time scales.
+To operationalize this framework, the authors developed a simulation tool called **ANIMOVER\_1**. It is implemented using a graphical platform called the Numerus Runtime Alterable Modeling Platform. The simulator allows users to set parameters such as terrain type, movement preferences, resource extraction behavior, and environmental constraints. Importantly, the user does not need to write any code to run simulations, which makes the platform accessible to a wide range of researchers.
+The authors demonstrate their method using both artificial simulation data and real-world tracking data collected from two barn owls in Israel. The relocation data was analyzed to extract StaMEs and identify clusters that correspond to different types of movement behavior. For example, some clusters contained high-speed, straight-line movements indicative of travel between patches, while others showed slower, irregular paths typical of searching or foraging within a resource patch.
+This bottom-up segmentation strategy enables ecologists to study movement in a way that reflects natural behavior more accurately. It also allows researchers to simulate how an individual might respond to changing conditions, such as encountering a barrier, searching for food, or adapting to a new environment. The model’s flexibility supports the generation of hypotheses about animal behavior that can be tested both in simulations and in field observations.
+The study concludes that StaMEs offer a practical and scalable tool for organizing animal movement data into interpretable units. By capturing the fine-scale structure of movement and linking it to environmental and internal variables, the approach has strong potential for applications in conservation, behavioral ecology, and even disease modeling.]</p>
+         <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 9 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski9_dugo.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+        
+       <!-- WEEK 10 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 10</h3>
+          <p class="article-title">Machine Learning for Modeling
+            Animal Movement</p>
+          <p class="article-authors">Dhanushi A. Wijeyakulasuriya, Elizabeth W. Eisenhauer, Ben-
+            jamin A. Shaby, Ephraim M. Hanks</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Random Forest</strong> An ensemble machine learning method that builds multiple decision trees
+                during training and averages their results. Used for classification and regression, it is robust to overfitting and handles high-dimensional data well.</li>
+            <li><strong>Term 2: Neural Network</strong> A computational model inspired by the brain, composed of layers of interconnected units (neurons). Neural networks learn patterns from data and
+                are used for both classification and prediction tasks.</li>
+            <li><strong>Term 3: Recurrent Neural Network (RNN)</strong> A type of neural network designed for sequence data. It has memory, meaning
+                that past inputs influence current outputs. Commonly used in time-series
+                modeling, including animal movement over time</li>
+            <li><strong>Term 4: Long Short-Term Memory (LSTM)</strong> An advanced form of RNN that solves the problem of forgetting long-term
+                dependencies. It uses internal gates to control what to keep and what to
+                forget, making it effective for modeling long sequences, such as migration
+                paths.</li>
+            <li><strong>Term 5: Stochastic Differential Equation (SDE) Model</strong> A parametric model that describes random processes evolving over time.
+                Used to simulate smooth, continuous animal paths based on environmental
+                gradients and movement tendencies.</li>
+            <li><strong>Term 6: Motility Surface</strong> A map that describes how fast an animal is likely to move at each location.
+                High motility areas promote faster movement, while low motility areas slow
+                animals down. It helps model movement intensity in space.</li>
+            <li><strong>Term 7: Potential Surface</strong>A spatial surface that represents areas of attraction or repulsion, influenc-
+                ing the direction of movement. Animals tend to move down the potential
+                gradient, similar to how objects roll downhill.</li>
+            <li><strong>Term 8: Behavioral State</strong> A label describing the type of movement an animal is performing at a given
+                time (e.g., foraging, migrating, resting). In the model, each state has its own
+                characteristic movement pattern.</li>
+            <li><strong>Term 9: Velocity Prediction</strong> The process of estimating the animal’s speed and direction of movement,
+                often based on past movement and environmental variables. It’s the second
+                step in the two-part modeling framework.</li>
+            <li><strong>Term 10: One-Step Ahead Prediction</strong> A type of prediction where the model estimates the next position or behavior
+                of the animal based only on the most recent data. Used to assess short-term
+                accuracy of models.</li>
+            <li><strong>Term 11: Simulation</strong> Generating artificial movement data using a trained model. Simulations help
+                test how well models reproduce real-world behaviors over longer periods and
+                under various scenarios.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article presents a flexible and general framework for predicting animal movement using machine learning and deep learning techniques. The authors propose a two-step model: first, classify the behavioral state of the animal, and second, predict the animal's velocity based on that state. Unlike traditional parametric models that rely on fixed assumptions about animal behavior, this data-driven approach uses flexible nonparametric methods to improve prediction and simulation quality.
+            The study focuses on two data sets: high-resolution 2D movement data from an entire colony of carpenter ants, and long-range migratory data from lesser black-backed gulls. For the ants, the authors model both individual and collective behavior using Random Forests, feedforward and recurrent neural networks, and a baseline stochastic differential equation (SDE) model. They show that machine learning models—especially LSTM (Long Short-Term Memory) neural networks—perform best for predicting short-term movement (one step ahead), while the SDE model better captures long-range patterns.
+            To represent different behaviors, the authors define three states for ants: stationary, moving inside the nest, and outside the nest. For gulls, four states are defined: northern range, southbound migration, southern range, and northbound migration. Models are trained on lagged variables like position, velocity, time of day, and proximity to nest walls or neighboring individuals.
+            Simulations over 1000 time steps show that while no model perfectly replicates all movement dynamics, the LSTM model comes closest to reproducing realistic individual trajectories. The authors also explore model performance for simulated gull migration, showing that LSTM again outperforms Random Forests in capturing state transitions and directional patterns.
+            One advantage of the machine learning approach is its generalizability across species. However, a key limitation is interpretability: while parametric models yield clearer insights into behavior and environment interactions, machine learning methods offer higher predictive power but less clarity.
+            In conclusion, the study provides strong evidence that machine learning and deep learning models can effectively model and simulate animal movement, especially when high-resolution data is available. Their general framework can be adapted to various ecological applications, including disease modeling, conservation planning, and behavioral ecology.
+           <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 10 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski10_nokoncowkazjebana.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+        
+       <!-- WEEK 11 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 11</h3>
+          <p class="article-title">Article 11: Hybrid moiré excitons and trions in twisted $\mathrm{MoTe_2}$–$\mathrm{MoSe_2}$ heterobilayers</p>
+          <p class="article-authors">Shen Zhao, Xin Huang, Roland Gillen, Zhijie Li, Song Liu, Kenji
+Watanabe, Takashi Taniguchi, Janina Maultzsch, James Hone, Alexander
+Högele, Anvar S. Baimuratov</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Moiré superlattice</strong> A larger-scale periodic structure formed when two atomic layers are overlaid with a twist or slight lattice mismatch. It creates a new periodic potential modifying electrons, holes, and excitons. In this article, the $\mathrm{MoTe_2}$–$\mathrm{MoSe_2}$ heterobilayers form a moiré pattern controlled by the twist angle.</li>
+            <li><strong>Term 2: Continuum model</strong> A theoretical approach in which the atomic-scale lattice is replaced by a smoothly varying effective potential. It captures long-wavelength physics of twisted heterobilayers, e.g. resonant interlayer tunneling and moiré potentials.</li>
+            <li><strong>Term 3: Resonant interlayer tunneling</strong> A process in which electrons or holes coherently tunnel between the two layers when their energy levels are nearly matched. It hybridizes exciton states of different layers, enhancing optical activity.</li>
+            <li><strong>Term 4: Oscillator strength</strong> A measure of the probability of optical transitions (absorption or emission). Higher oscillator strength implies stronger light–matter coupling. In the hybrid exciton context, it indicates how bright the exciton appears in optical spectra.</li>
+            <li><strong>Term 5: Landé g-factor</strong> A dimensionless parameter describing the splitting of energy levels in a magnetic field. In the paper, g-factors of moiré excitons vary with twist angle, reflecting their spin and valley structure.</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article investigates the optical and electronic properties of hybrid moiré excitons and trions in twisted molybdenum telluride–molybdenum selenide heterobilayers. These are bilayers of two different transition metal dichalcogenides, misaligned by a small twist angle, leading to the formation of a moiré superlattice. This larger-scale periodic structure creates a new effective potential, significantly altering the behavior of excitons—bound states of electrons and holes.
+
+Using a continuum model, the authors describe how interlayer interactions affect the energy levels and optical activity of these quasiparticles. A key phenomenon discussed is resonant interlayer tunneling, where carriers such as electrons can coherently tunnel between layers when their energy states are aligned. This process leads to hybridization of exciton states from both layers, forming new optically active states that would otherwise be dark in untwisted or aligned systems.
+The oscillator strength of these hybrid excitons is shown to depend strongly on the twist angle, meaning their coupling to light can be enhanced or suppressed based on geometric alignment. This twist-tunability opens potential applications in optoelectronic devices with controllable brightness and emission properties.
+The paper also analyzes the magnetic response of these excitons using the Landé $g$-factor, which quantifies how their energy levels split under an external magnetic field. The measured values of the $g$-factors vary with the twist angle, providing further evidence of the exciton's hybridized nature and the moiré potential's influence.
+Overall, the study demonstrates how carefully engineered moiré heterostructures allow for tunable excitonic properties. By controlling the twist angle and using advanced theoretical tools like continuum models, it is possible to access and manipulate exotic quasiparticles for future applications in quantum optics and valleytronics.</p>
+                 <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 11 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski11_ok.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+       
+       <!-- WEEK 12 -->
+       <div class="accordion">
+        <div class="accordion-header">
+          <h3>Week 12</h3>
+          <p class="article-title">Emerging Exciton Physics in Transition Metal Dichalcogenide Heterobilayers</p>
+          <p class="article-authors"> Emma C. Regan, Danqing Wang, Eunice Y. Paik, Yongxin Zeng, Long Zhang, Jihang Zhu, Allan H. MacDonald, Hui Deng, Feng Wang</p>
+        </div>
+        <div class="accordion-content">
+          <h4>Definitions</h4>
+          <ul class="definition-list">
+            <li><strong>Term 1: Moiré mini Brillouin zone (mBZ)</strong> A smaller, folded Brillouin zone in reciprocal space that arises from the large real-space periodicity of a moiré superlattice. Exciton bands fold into the mBZ, potentially becoming flat or opening gaps</li>
+            <li><strong>Term 2: Exciton localization</strong> The confinement of excitons to specific potential minima within the moiré superlattice. It occurs when the moiré potential depth exceeds exciton kinetic energy, leading to site-specific exciton trapping </li>
+            <li><strong>Term 3: Exciton-polariton </strong>A hybrid quasiparticle formed by strong coupling between an exciton and a photon confined in an optical cavity. These emerge in TMD heterostructures placed inside cavities </li>
+            <li><strong>Term 4: Flatband </strong>An energy band with very low dispersion (narrow width), where particles have nearly zero group velocity. Flatbands enhance correlations and can support exotic collective states </li>
+            <li><strong>Term 5: Berry curvature </strong>A momentum-space field describing the geometrical properties of Bloch bands. Non-zero Berry curvature in exciton bands (within mBZ) can lead to topological effects</li>
+          </ul>
+          <h4>Summary</h4>
+          <p>This article reviews the rapidly developing field of exciton physics in twisted transition metal dichalcogenide (TMD) heterobilayers. When two monolayers such as $\mathrm{MoSe_2}$ and $\mathrm{WSe_2}$ are stacked with a small twist angle, they form a moiré superlattice that dramatically alters the electronic and optical properties of the system.
+One key effect is the formation of a moiré mini Brillouin zone (mBZ), a reduced version of the reciprocal lattice due to the enlarged moiré unit cell. In this new zone, exciton bands can flatten or fold, creating narrow bandwidths—called flatbands—where particle motion is suppressed. These flatbands enhance Coulomb interactions, enabling the emergence of exotic collective states.
+Another important phenomenon is exciton localization. If the moiré potential is deep enough, excitons become trapped in specific spatial regions, forming arrays of quantum-dot-like sites. This localization gives rise to discrete energy levels and strongly modifies the photoluminescence spectrum.
+Moreover, when these heterobilayers are placed inside optical cavities, they can support exciton-polaritons—quasiparticles resulting from the strong coupling between excitons and confined photons. These hybrid modes inherit properties from both light and matter, allowing for tunable quantum-optical behavior.
+The article also emphasizes the role of Berry curvature in exciton bands. In systems with broken inversion symmetry, non-zero Berry curvature arises in the mBZ, giving rise to topological effects such as valley-selective optical transitions or excitonic Hall currents. These geometrical properties are not just theoretical curiosities—they have direct experimental signatures and technological implications.
+In summary, twisted TMD heterobilayers provide an ideal platform to study strongly correlated, topologically rich exciton systems. The combination of flatbands, localization, hybrid light–matter coupling, and Berry curvature effects makes these systems highly tunable and relevant for quantum simulation and optoelectronics.</p>
+                   <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 12 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski12_g.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+        
+ <!-- WEEK 13 -->
+ <div class="accordion">
+    <div class="accordion-header">
+      <h3>Week 13</h3>
+      <p class="article-title">Bridging the small and large in twisted transition metal dichalcogenide homobilayers: a tight binding model capturing orbital interference and topology across a wide range of twist angles</p>
+      <p class="article-authors">Valentin Crépel, Andrew Millis</p>
+    </div>
+    <div class="accordion-content">
+      <h4>Definitions</h4>
+      <ul class="definition-list">
+        <li><strong>Term 1: Wannier obstruction</strong> The inability to construct exponentially localized Wannier functions for certain topological bands. The article notes that no Wannier obstruction exists here, allowing for accurate tight-binding modeling</li>
+        <li><strong>Term 2: Orbital interference</strong> Quantum interference between electron hopping paths via different orbitals (e.g., from honeycomb vs triangular sites). This mechanism explains the emergence of magic angles and band structure features </li>
+        <li><strong>Term 3: Chern number</strong> A topological invariant characterizing energy bands; the article tracks how Chern numbers of moiré bands evolve with twist angle, indicating transitions between Chern insulator states </li>
+        <li><strong>Term 4: Magic angle</strong> A special twist angle where destructive interference in hopping leads to nearly flat (dispersionless) bands. At these angles, strongly correlated physics like flat-band phenomena arise </li>
+        <li><strong>Term 5: van Hove singularity</strong>A peak (divergence) in the electronic density of states caused by saddle points in the band structure. The model reproduces both Chern ferromagnetic and van Hove–driven antiferromagnetic phases </li>
+      </ul>
+      <h4>Summary</h4>
+      <p>This paper introduces a unified tight-binding model that describes the electronic structure of twisted transition metal dichalcogenide (TMD) homobilayers across a wide range of twist angles. The goal is to bridge the gap between small-angle and large-angle regimes, capturing both orbital effects and topological features in a single framework.
+One of the key contributions of the model is that it avoids any Wannier obstruction. This means it is possible to construct well-localized Wannier functions for the relevant bands, enabling accurate modeling of electronic behavior using tight-binding methods even in topological regimes.
+A central mechanism explored in the article is orbital interference. In twisted bilayers, electrons can hop between layers via multiple orbital paths—\\some located on triangular sublattices, others on honeycomb sites. Quantum interference between these paths leads to complex features in the band structure, including the emergence of flatbands and topological transitions.
+The model tracks the evolution of Chern numbers as a function of twist angle. These Chern numbers are topological invariants that indicate whether the system exhibits properties of a Chern insulator. The authors demonstrate that changes in orbital overlap and symmetry breaking can drive transitions between different topological phases.
+One highlight of the model is its ability to reproduce magic angle behavior. At specific twist angles, destructive interference among hopping paths causes the energy bands to flatten significantly. These so-called magic angles are associated with strongly correlated electron phases, similar to what is seen in twisted bilayer graphene.
+Additionally, the model captures van Hove singularities—sharp peaks in the density of states that occur due to saddle points in the band structure. These features are important because they often signal the onset of new collective states, such as magnetism or superconductivity.
+In summary, the article presents a flexible and physically motivated tight-binding framework that captures both the geometric and topological richness of twisted TMD bilayers. It opens the door to realistic simulations of flatband physics and correlated phases in a broad family of moiré materials.</p>
+                  <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 13 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski13_mozebyc.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+        
+   <!-- WEEK 14 -->
+   <div class="accordion">
+    <div class="accordion-header">
+      <h3>Week 14</h3>
+      <p class="article-title">Dynamical properties of quantum many‑body systems with long‑range interactions</p>
+      <p class="article-authors"> Menghan Song, Jiarui Zhao, Chengkang Zhou, Zi Yang Meng</p>
+    </div>
+    <div class="accordion-content">
+      <h4>Definitions</h4>
+      <ul class="definition-list">
+        <li><strong>Term 1: Quantum Monte Carlo (QMC)</strong>A stochastic numerical method used to simulate quantum many-body systems. In this article, it's employed to compute dynamical spectra of 2D spin‑½ Heisenberg models with long‑range interactions.</li>
+        <li><strong>Term 2: Magnon dispersion</strong>The relation between energy and momentum for collective spin-wave excitations (magnons). Long-range interactions modify the usual linear/quadratic dispersion, resulting in anomalous scaling </li>
+        <li><strong>Term 3: Anomalous dynamical exponent</strong> A non-integer scaling exponent governing how excitation energies depend on momentum. Found here due to long‑range interactions altering magnon dispersion </li>
+        <li><strong>Term 4: Higgs‑type spectrum</strong> A gapped excitation mode resembling the amplitude (Higgs) mode in symmetry-breaking systems. The authors identify these Higgs-like modes in certain interaction regimes </li>
+        <li><strong>Term 5: Spin‑wave analysis</strong>A semi-classical analytical method to approximate low-energy excitations by expanding around a magnetically ordered state. Used here alongside QMC to interpret spectral results </li>
+      </ul>
+      <h4>Summary</h4>
+      <p>This article explores how long-range interactions influence the dynamical properties of quantum spin systems, focusing on the two-dimensional spin‑$\frac{1}{2}$ Heisenberg model. Unlike traditional short-range models, where spins interact only with their nearest neighbors, this study investigates what happens when interactions decay algebraically over distance.
+
+To study such systems, the authors use Quantum Monte Carlo (QMC) simulations, a powerful stochastic method for computing equilibrium and dynamical properties of many-body quantum systems. By applying QMC to spin lattices with long-range interactions, they extract the full excitation spectrum with high precision.
+One of the central findings involves the magnon dispersion—the energy-momentum relation of collective spin excitations. In short-range models, magnons typically exhibit linear or quadratic dispersion at low momenta. However, with long-range interactions, the authors find that this dispersion becomes anomalous and follows a new scaling law.
+This leads to the introduction of an anomalous dynamical exponent, a non-integer parameter that governs how excitation energies scale with momentum. This result indicates that long-range interactions fundamentally alter the low-energy physics, producing behavior distinct from conventional models.
+The authors also identify a Higgs-type spectrum in certain regimes. These are gapped modes associated with amplitude fluctuations of the order parameter—analogous to the Higgs boson in particle physics. Their emergence signals rich internal dynamics in magnetically ordered phases with long-range coupling.
+To interpret their results, the authors complement numerical simulations with spin-wave analysis—a semi-classical method that approximates low-energy behavior by expanding around an ordered ground state. This approach provides physical intuition and confirms the numerical trends observed in QMC data.
+In conclusion, the study reveals that long-range interactions dramatically reshape the dynamical landscape of quantum magnets. With tools like QMC and spin-wave theory, the authors uncover novel scaling laws and excitation modes, paving the way for deeper understanding of non-local quantum matter.</p>
+               <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 14 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski14_poprawnie.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+       
+   <!-- WEEK 15 -->
+   <div class="accordion">
+    <div class="accordion-header">
+      <h3>Week 15</h3>
+      <p class="article-title">Non Equilibrium Green’s Functions for Dummies: Introduction to the One Particle NEGF equations</p>
+      <p class="article-authors">Magnus Paulsson</p>
+    </div>
+    <div class="accordion-content">
+      <h4>Definitions</h4>
+      <ul class="definition-list">
+        <li><strong>Term 1: Retarded/Advanced Green’s function</strong> Types of Green’s functions distinguishing causal (retarded) and time-reversed (advanced) responses. Retarded ($G$) describes propagation forward in time, advanced ($G^{\dagger}$) backward </li>
+        <li><strong>Term 2: Self-energy</strong> A complex function, $\Sigma = \tau g \tau^\dagger$, that incorporates the effect of contacts (leads) on the device region in the discrete Schrödinger equation. It modifies the effective Hamiltonian used to obtain $G$</li>
+        <li><strong>Term 3: Spectral function</strong> Denoted $A = i(G - G^{\dagger})$, it captures the system's density of states and the full set of energy eigenstates. It directly relates to physical observables like the charge density </li>
+        <li><strong>Term 4: Transmission function</strong> Defined as $T(E) = \text{Tr}( \Gamma_L G \Gamma_R G^{\dagger})$, where $\Gamma_{\{L,R\}} = i(\Sigma_{\{L,R\}} - \Sigma_{\{L,R\}}^{\dagger})$. It quantifies the probability for electrons to transmit through the device </li>
+        <li><strong>Term 5: Continuity equation approach</strong> A method to derive current operators via the time-dependent Schrödinger or continuity equation, rather than using a velocity operator, particularly important in discrete tight-binding systems </li>
+      </ul>
+      <h4>Summary</h4>
+      <p>This article introduces the core ideas behind the Non-Equilibrium Green’s Function (NEGF) formalism, which is widely used to describe quantum transport in nanoscale systems such as molecular junctions and quantum dots.
+At the heart of the method are the **retarded** and **advanced Green’s functions**, denoted $G$ and $G^{\dagger}$. These functions describe how an electron propagates through a quantum system either forward or backward in time. Importantly, they encode how the system responds to external perturbations.
+A key ingredient in this approach is the **self-energy**, $\Sigma$, which accounts for the influence of the leads (electrodes) connected to the central device region. The self-energy modifies the effective Hamiltonian, allowing the calculation of $G$ to include the coupling to the surrounding reservoirs.
+From $G$ and $\Sigma$, we can define the **spectral function**, $A = i(G - G^{\dagger})$, which reflects the density of available states in the system. This function connects directly to physical observables such as the local density of states and charge density.
+Perhaps the most practical output of the NEGF method is the **transmission function**, $T(E)$, which tells us the energy-dependent probability that an electron will transmit from one lead to another through the device. It is computed from the Green’s functions and the so-called broadening matrices $\Gamma_L$ and $\Gamma_R$, which are derived from the self-energies.
+Finally, the article emphasizes the **continuity equation approach** to defining current operators. Instead of using a velocity operator, which can be ambiguous in tight-binding models, the author uses the continuity equation to rigorously derive expressions for the current. This makes the NEGF formalism more consistent and physically transparent, especially for discrete systems.
+In summary, this tutorial offers a clear and intuitive roadmap to the NEGF formalism, breaking down complex quantum transport concepts into manageable equations and physical interpretations. It is especially valuable for newcomers aiming to understand how quantum currents flow through nanoscale devices.
+</p>
+      <h4>Video</h4>
+               <h4>Audio</h4>
+        <div class="audio-block">
+  <p><strong>Week 15 – Pronunciation Practice</strong></p>
+  <audio controls>
+    <source src="assets/Angielski15_bardzog.m4a" type="audio/mp4">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+        </div>
+      </div>
+       
+    </div>
+  </section>
+  
+  <!-- Back face -->
+  
+  <section class="face face-back" id="additional">
+  <div class="face-nav">
+    <button class="nav-btn" id="prevBtn-additional">◀</button>
+    <h2>Additional Tasks</h2>
+    <button class="nav-btn" id="nextBtn-additional">▶</button>
+  </div>
+
+  <div class="weekly-grid">
+    
+    <div class="week-card">
+      <h3>Task 1 – Direct and Indirect Questions</h3>
+      <p>This task involved practicing the transformation of direct questions into indirect ones.</p>
+
+      <div class="task-images">
+        <img src="assets/questions1.png" alt="Task 1 Part 1" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+        <img src="assets/questions2.png" alt="Task 1 Part 2" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+        <img src="assets/questions3.png" alt="Task 1 Part 3" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐⭐☆ ☆]</li>
+          <li><strong>Relevance:</strong> [⭐⭐☆ ☆ ☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐☆ ☆ ☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐⭐☆ ☆]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <h3>Task 2 - Handout 1</h3>
+      <p>This task involved analyzing a scientific article and reflecting on its content through vocabulary extraction, question design, and paraphrasing for deeper understanding.</p>
+      <div class="task-images">
+        <img src="assets/handout1.png" alt="Task 2" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐ ☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐⭐⭐☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐⭐☆☆]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <h3>Task 3 - Developing new technology</h3>
+      <p>This task focused on how scientists develop new technologies using moiré materials.</p>
+      <div class="task-images">
+        <img src="assets/Developing_new_technology .png" alt="Task 3" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐☆☆☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐☆☆☆]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <h3>Task 4 - Story</h3>
+      <p>In this task, students were asked to create a humorous and imaginative photo story based on 20 images of physicists, using Flickr or classroom photos</p>
+      <div class="task-images">
+        <img src="assets/story.png" alt="Task 4" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <p>story: A group of physicists was gathered at a formal dinner. Complex problems were discussed, and glasses of wine were being emptied rapidly. In the lab, frantic theories were proposed. Pizza was delivered. Equations were written. Unfortunately, nothing was understood. It was decided that the professor should be consulted. A bold decision was expected. Heavy artillery was metaphorically brought in – a spacecraft was launched to test the wildest hypothesis. But disaster struck. A golden part was detached midair and tragically lost. Fortunately, it was recovered… and placed into the lab freezer, in hopes that it might fix itself. Miraculously, the repair succeeded. The component was stabilized. But the freezer had been assigned strictly for drinks and food. As punishment, a formal letter was sent by the dean. Cleaning duty for a week was assigned to the entire team. In an act of rebellion, twelve beers were consumed. Side effects were observed. Their DNA twisted. On their way to the second bar, new friends from Asia were met. Group photos were taken. Regrets were postponed. Returning to campus, the wrong classroom was entered. A strong electromagnetic field was accidentally discovered. Instead of fleeing, the field was used to build a makeshift computer – directly in the radiation zone. But errors occurred. Three of them, to be precise. And none could be debugged. The broken computer was not fixed – instead, it was turned into a monument. A label reading “Physics 2000” was added. However, long-term exposure to the field caused skin color to shift. Still, pride was felt. Photos were taken yet again. One student’s hair was permanently electrified. In the lab, chaos continued. Caffeine was consumed. No safety measures were followed. Presentations were held. Laughter was heard. Mistakes were applauded. Not a single law of physics was broken – but several were bent creatively. Thus ended the legendary project Physics 2000: It was weird, brave, and utterly unforgettable.</p>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐☆☆☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐☆☆☆]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="week-card">
+      <h3>Task 5 - Chosen Ted Talk</h3>
+      <p>In this task, I watched a TED Talk summarized its key points, reflected on its message, and explained why it was interesting and relevant to my field of study.</p>
+      <div class="task-images">
+        <img src="assets/Chosen_ted_Talk.png" alt="Task 5" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐☆☆☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐⭐☆☆]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="week-card">
+      <h3>Task 6 - presentation </h3>
+      <iframe src="https://docs.google.com/presentation/d/1AcuGKZrP1K3z64Khj8HAFKoxW7u3suJI4qEhDMQBPl0/edit?usp=sharing"
+  frameborder="0" width="100%" height="480" allowfullscreen></iframe>
+  <a href="https://quizlet.com/pl/1042576606/modeling-flows-flash-cards/?funnelUUID=3cf9c7de-64c8-4c22-84ee-6905801212b7" target="_blank" class="quizlet-link">
+  🔗 Open my Quizlet set
+</a>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐⭐⭐☆]</li>
+          <li><strong>Relevance:</strong> [⭐⭐⭐⭐⭐]</li>
+          <li><strong>Engagement:</strong> [⭐⭐⭐⭐⭐]</li>
+          <li><strong>Effort:</strong> [⭐⭐⭐⭐⭐]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="week-card">
+      <h3>Task 7 - handout 1A</h3>
+      <p>...</p>
+      <div class="task-images">
+        <img src="assets/listening_handout.png" alt="Task 7" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐☆☆☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Effort:</strong> [⭐☆☆☆☆]</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="week-card">
+      <h3>Task 8 - conditionals</h3>
+      <div class="task-images">
+        <img src="assets/conditionals.png" alt="Task 7" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Effort:</strong> [⭐☆☆☆☆]</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="week-card">
+      <h3>Task 9 - reported speech</h3>
+      <p>This execrise was made in the cooperation with Natalia S.</p>
+       <a href="https://peppermint-beryl-ecc.notion.site/Reported-speech-20392596bff680bd9348fc58aca3132b" target="_blank" class="quizlet-link">
+  🔗 Natalias e-portfolio link to execrise</a>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐⭐⭐☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐⭐☆☆]</li>
+        </ul>
+      </div>
+    </div>
+
+       <div class="week-card">
+      <h3>Task 10 - relative clauses</h3>
+  <div class="task-images">
+        <img src="assets/relativ_clauses.png" alt="Task 10" style="max-width: 100%; border-radius: 8px; margin: 1rem 0;">
+      </div>
+      <div class="feedback">
+        <p><strong>Feedback:</strong></p>
+        <ul class="feedback-list">
+          <li><strong>Difficulty:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Relevance:</strong> [⭐⭐☆☆☆]</li>
+          <li><strong>Engagement:</strong> [⭐☆☆☆☆]</li>
+          <li><strong>Effort:</strong> [⭐⭐☆☆☆]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My E-Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
